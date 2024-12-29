@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="507.0" prefWidth="738.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.scenebuildercode.HelloController">
+   <children>
+      <TableView fx:id="tableView" layoutX="50.0" layoutY="23.0" prefHeight="189.0" prefWidth="638.0">
+        <columns>
+          <TableColumn fx:id="idcolumn" prefWidth="29.5999755859375" text="ID" />
+          <TableColumn fx:id="namecolumn" prefWidth="215.1999053955078" text="Name" />
+            <TableColumn fx:id="colorcolumn" prefWidth="143.20001220703125" text="Color" />
+            <TableColumn fx:id="generationcolumn" prefWidth="80.00006103515625" text="Generation" />
+            <TableColumn fx:id="pricecolumn" prefWidth="85.60003662109375" text="Price" />
+            <TableColumn fx:id="selectedColumn" prefWidth="80.80001220703127" text="Select" />
+        </columns>
+      </TableView> <Button fx:id="proceedButton" layoutX="544.0" layoutY="230.0" onAction="#proceed" text="select" />
+      <TableView fx:id="SelectedtableView" layoutX="50.0" layoutY="265.0" prefHeight="189.0" prefWidth="638.0">
+         <columns>
+            <TableColumn fx:id="selectedIdColumn" prefWidth="29.5999755859375" text="ID" />
+            <TableColumn fx:id="selectedNameColumn" prefWidth="215.1999053955078" text="Name" />
+            <TableColumn fx:id="selectedColorColumn" prefWidth="143.20001220703125" text="Color" />
+            <TableColumn fx:id="selectedGenerationColumn" prefWidth="80.00006103515625" text="Generation" />
+            <TableColumn fx:id="selectedPriceColumn" prefWidth="85.60003662109375" text="Price" />
+            <TableColumn fx:id="table2SelectedColumn" prefWidth="81.60001220703123" text="Select" />
+         </columns>
+      </TableView>
+      <Button fx:id="deleteButton" layoutX="612.0" layoutY="230.0" mnemonicParsing="false" onAction="#deleteSelected" text="delete" />
+       
+   </children>
+</AnchorPane>
